@@ -25,6 +25,7 @@ paletteApp.controller('PaletteCtrl', function ($scope) {
         $scope.selectedColor = "Nothing Selected";
         $scope.showHint = true;
         $scope.colorArray = [];
+        $scope.count=null;
     };
 
 

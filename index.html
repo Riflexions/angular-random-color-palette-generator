@@ -33,13 +33,14 @@
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <h3>Config Panel</h3>
             <hr>
-            <form>
+            <form ng-submit="generate()">
                 <div class="form-group">
                     <input type="number" min={{countMin}} max={{countMax}} class="form-control" placeholder="# of colors"
                            ng-model="count">
                     <br>
-                    <button type="button" class="btn btn-primary" ng-click="generate()">Generate</button>
-                    <button type="button" class="btn btn-danger" ng-click="resetPalette()">Clear</button>
+                    <input type="submit" class="btn btn-primary"/>
+
+                    <input type="reset" class="btn btn-danger" ng-click="resetPalette()"/>
                 </div>
             </form>
             <br>
